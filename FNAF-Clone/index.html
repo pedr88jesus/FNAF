@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FNAF Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Vídeo de fundo -->
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/videos/background.mp4" type="video/mp4">
+  </video>
+
+  <!-- HUD -->
+  <div id="hud">
+    <div id="battery">Bateria: 100%</div>
+    <div id="time">Hora: 12 AM</div>
+  </div>
+
+  <!-- Câmeras -->
+  <div id="camera-system">
+    <div id="camera-feed">
+      <img id="camera-image" src="assets/images/cam1/1.png" alt="Câmera">
+    </div>
+    <div id="camera-buttons">
+      <button onclick="changeCamera('cam1')">Cam 1</button>
+      <button onclick="changeCamera('cam2')">Cam 2</button>
+      <button onclick="changeCamera('cam3')">Cam 3</button>
+      <button onclick="changeCamera('cam4')">Cam 4</button>
+    </div>
+  </div>
+
+  <!-- Tela de vitória/derrota -->
+  <div id="end-screen" class="hidden">
+    <video id="end-video" autoplay></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

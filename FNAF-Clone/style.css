@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  color: white;
+  overflow: hidden;
+}
+
+/* Vídeo de fundo */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* HUD */
+#hud {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  text-align: right;
+}
+
+/* Câmeras */
+#camera-system {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#camera-feed img {
+  width: 600px;
+  height: 350px;
+  border: 3px solid white;
+}
+
+#camera-buttons {
+  margin-top: 10px;
+}
+
+#camera-buttons button {
+  background: black;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 15px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+#camera-buttons button:hover {
+  background: gray;
+}
+
+/* Tela final */
+#end-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#end-screen video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
